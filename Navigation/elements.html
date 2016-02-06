@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]>
+	 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	 <![endif]-->
+	<title>CSS Only Navigation Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,500,300' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript">
+// <![CDATA[
+var dailyPhotos;
+var today, img;
+dailyPhotos = function() {
+   today = new Date();
+   weekday = today.getDay();
+   showImages = [ ];
+   myPhotos = [ "images/de-ab-s.png", "mondayPhoto.jpg", "images/de-ds-s2.png", "images/de-nr-s.png", "thursdayPhoto.jpg", "fridayPhoto.jpg", "saturdayPhoto.jpg" ]; // You must specify the path or file name of your images that will be loaded in a weekday basis.
+    if ( document.images ) {
+       for ( var x = 0; x < myPhotos.length; x++ ) { 
+       showImages[ x ] = new Image();
+       showImages[ x ].src = myPhotos[ x ];          
+     } img = (( document.getElementById ) ? document.getElementById("weekEventId") : document.images.weekEventId ); // Specify the id of the image that will get raplaced daily.
+        img.src = showImages[ weekday ].src;
+        img.alt = myPhotos[ weekday ];         
+   } return false; // If the browser can't display images, then EXIT FUNCTION.
+};
+   window.onload = dailyPhotos;
+// ]]>
+        
+</script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <div  class="banner1">
+            
+            <div class="a_events" id="weekEventId">
+                <div class="events">
+                    <h2>Alliance Events</h2>
+                    <h3 class="a"> Summoner Advancement</h3>
+                </div>
+
+            </div>
+            <div class="b_events" id="dailyQuestsId">
+                <div class="eventsB">
+                    <h2 > Daily Quests</h2>
+                    <h3 class="b"> Summoner Advancement</h3>
+                </div>                
+            </div>
+        </div>
+     <div class="adquire clearfix">
+         <div class="box">
+         <h2>What You Need</h2>
+                <p> To  be able to join the squad, you will have to have two things, the first is the mobile game Marvel Contest of Champions. the other is Line; a mobile messaging app for your phone or tablet. </p>
+         
+             <ul class="appLogo">
+                 <li><img class="appLogo" src="images/Line_(application)_logo.svg"></li>
+                 <li><img class="appLogo" src="images/mcoc_logo.png"></li>
+             </ul>
+             
+        
+         </div>
+                
+         
+                </div>
+    </div>
+    
+</body>
+    
+
+</html>

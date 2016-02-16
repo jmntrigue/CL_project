@@ -5,415 +5,152 @@
 
 html {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #999;
 }
 
 body {
-  font-family: 'Advent Pro', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
+    font-family: 'Advent Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size:100%;
+    line-height:1.125em; /* 16x1.125=18px */
+    padding: 0;
+    
 }
 
-header {
-  background-color: black;
-  height: 55%;
-  background-image: url('../images/banner.jpeg');
-  -webkit-background-size: 100% 100%;           /* Safari 3.0 */
-    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
-      -o-background-size: 100% 100%;           /* Opera 9.5 */
-         background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
-
- -moz-border-image: url(../images/bg-image.png) 0;    /* Gecko 1.9.1 (Firefox 3.5) */
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: contain;
- -moz-background-size: contain;
- border-bottom: solid 5px darkorange;
+h1, h2, h3 {
+	font-weight:normal;	
 }
 
 h1 {
-  font-size: 90px;
-  color: white;
+	font-size: 1.375em; /* 16x1.375=22px */
+	line-height: 1.636em;/* 16x1.636=36px */
+	margin: 0;
 }
 
 h2 {
-  font-size: 48px;
-    padding-bottom: .076em
-}
-
-h3 {
-  font-size: 20px;
-  color: #777;
+	font-size: 1.125em; /* 16x1.125=18px */
+	margin:1em 0; /* 18x1=18px */
 }
 
 p {
-    line-height: 1.125em;
-    padding-bottom: .75em;
+	font-size: 0.875em; /* 16x0.875=14px */
+	margin: 1.286em 0; /* 14x1.286=18px */
 }
 
+/* Navagation setup */
 
-
-.logo {
-  width: 25%;
-  margin: auto;
-}
-.hero-logo {
-  width: 65%;
-  background-color: black;
-
-
-}
-
-.banner1 {
-    height: 160px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-image: url('../images/bg2a.jpg');
-  -webkit-background-size: 100% 100%;           /* Safari 3.0 */
-    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
-      -o-background-size: 100% 100%;           /* Opera 9.5 */
-         background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
-
- -moz-border-image: url(../images/bg2a.jpg) 0;    /* Gecko 1.9.1 (Firefox 3.5) */
- background-attachment: fixed;
- background-repeat: no-repeat;
- background-size: contain;
- -moz-background-size: contain;
-
-}
-/* Section Styles */
-
-/*.banner {
-  background: #fff;
-  height: 260px;
-  margin: auto;
-  padding-top: 20px;
-  padding-left: 40%;
-  padding-right: 5%;
-
-}
-*/
-
-.main-nav {
-  width: 100%;
-  background:rgba(0,0,0,0.7);
-  min-height: 50px;
-  padding: 0px;
-  position: fixed;
-  text-align: center;
-  margin: auto;
-  top: 0;
-}
-
-.nav {
-  list-style-type: none;
-    margin:0;
-    padding:0;
-    text-align:center;  
-}
-
-}
-
-.intro {
-  margin: auto;
-  width: 65%;
-  background-color: rgba(0,0,0,0.4);
-  padding: 15px 25px;
-}
-
-.alliance_info {
-    background-color: darkgreen;
-    margin: auto;
-    width: 65%;
-}
-/*.intro-text  {
-  width: 100%;
-  margin: auto;
-  background-color: darkgrey;
-}
-*/
-
-/*
-
- .a_events {
-    vertical-align: left;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%,  rgba(255, 255, 255, 0)),
-                      url('../images/de-ab-s.png');
-    background-repeat: no-repeat,
-                       no-repeat;
-    background-size: 100%;
-    background-position: ;
-    width: 50%;
-    height: 120px;
-    margin: auto;
-    float: left;
-     padding:  2% 5% ;
- }
-
-.events, .a {
-    color: lightgray;
-    text-align: right;
-}
-
- .b_events {
-    vertical-align: right;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%,  rgba(255, 255, 255, 0)),
-                            url('../images/mysticCat.png');
-    background-repeat: no-repeat,
-                       no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 50%;
-    height: 120px;
-    margin: auto;
-    float: right;
-    padding:  2% 5% ;
-
- }
-.eventsB, .b {
-    color: lightgray;
-    text-align: left;
-}
-*/
-
-.adquire {
-    width: 100%;
-    background-color: #444;
-    padding: .75em .85em .75em .85em;
-    color: silver;
-}
-
-.adquire h2 {
-    padding: .5em 3.9em .5em;
-}
-
-
-.box {
-    height: 15em;
-    border-radius: .75em;
-    background-color: #333;
-    width: 98%;
-    text-align: center;
-    margin: auto;
-    padding: 0 4%;
-    
-}
-/* imqges */
-
-.capt {
- width: 30%;
-}
-
-.today {
-    vertical-align: bottom;
-}
-
-#main-footer {
-  padding-top: 50px;
-  padding-bottom: 35px;
-  border-bottom: solid 10px darkorange;
-  background-color: #444;
-  color: #878787;
-  width: 100%;
-
-}
-
-/* strip the ul of padding and list styling */
-
-a {
-  text-decoration: none;
-}
-
- .nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  float:left;
-}
-.nav li {
-  display: inline-block;
-  float: left;
-  margin-right: 0px;
-
-}
-/* Style for menu links */
-
- .nav li a {
-    display: block;
-    min-width: 140px;
+#nav {
+	width: 100%;
     height: 50px;
+	float: left;
+	margin: auto;
+	padding: 0;
+	list-style: none; 
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#nav li {
+	float: left; 
+}
+#nav li a {
+    display: block;
+    padding: 4px 15px;
+    text-decoration: none;
+    font-weight: bold;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     font-family: "Helvetica Neue", Helvetica, Arial,;
     color: silver;
-    text-decoration: none;
 }
 
-.nav li:hover a {
-	  background-color: rgba(255,140,0,0.9);
+#nav li:hover a {
+    background-color: rgba(255,140,0,0.9);
     color: #ffffff;
 }
 
-.nav li:visited a {
-  background-color: rgba(255,160,20,0.9);
-  color: #ffffff;
+#nav li:visited a {
+    background-color: rgba(255,160,20,0.9);
+    color: #ffffff;
 
 }
-.nav li:active a {
+#nav li:active a {
   background-color: rgba(225,160,20,0.9);
   color: #ffffff;
 }
 
-footer {
-clear: both;
 
+.logo {
+    width: 15%;
+    margin-top:0;
+    padding: 0;
 }
 
+/* ====== end Navigation */
 
-/* ========= event test ======= */
-
-/*
-ul#eventList {
-	padding: 0;
-	min-height: 310px;
+header {
+    height: 15.9375em;
+    background-color: black;
+    background-position: 1px 50px;
+    background-image: url('../images/IMG_0035.JPG'),
+                      linear-gradient(to right, rgba(0,0,0,0) 55%,rgba(0,0,0,0.04) 57%,rgba(0,0,0,1) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    -moz-background-size: contain;
+    border-bottom: solid 5px darkorange;
+    background-size: contain;
+}
+img.hero-logo {
+    width: 95%;
+    padding: 3% 2%;
+    position: relative;
+    top: 10.825em;
+    background: black;
+}
+.icaption {
+    position: relative;
+    top: 13.75em;
+    color: silver;
+}
+.section1 {
+    background: darkorange;
+    width: 100%;
+    height: 19.725em;
+    margin: 0;
 }
 
-ul#eventList > li {
-	display: block;
-	list-style: none;
-	margin: 6pt 0pt 6pt 0pt;
-	height: 74px;
-	background-size: 300px 74px;
+.alliance_info {
+    position: relative;
+    top: 6.7625em;
+    width: 95%;
+    margin: auto;
+    padding: .75em .925em 1.25em .925em;
+    background-color: rgba(0,0,0,0.8);
+    color: silver
 }
 
-ul#eventList > li.spacer {
-	display: block;
-	list-style: none;
-	margin: 12pt 0pt 12pt 0pt;
-	height: auto;
+.section2 {
+    height: 500px;
+    background-image: url('../images/earth.jpeg');
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: -130px 0px;
+    overflow: hidden;
+    margin: 0;
+
 }
-
-ul#eventList > li > div {
-	height: 62px;
-	background-color: rgba(32, 32, 32, .75);
-	padding: 8px 4px 4px 12px;
-	font-size: 1.25em;
-	font-weight: bold;
+h1.section2 {
+    color: white;
+    position: relative;
+    top: 60px;
 }
-
-ul#eventList > li > div > span.length {
-	font-size: 0.85em;
-	color: #eeeeee;
-}
-
-ul#eventList > li > div > span.message {
-	font-size: 0.7em;
-	color: #eeeeee;
-}
-
-ul#eventList > li.de-cr { background-image: url('images/de-cr-s.png') }
-ul#eventList > li.de-ru { background-image: url('images/de-ru-s.png') }
-ul#eventList > li.de-dd { background-image: url('images/de-dd-s.png') }
-ul#eventList > li.de-qc { background-image: url('images/de-qc-s.png') }
-ul#eventList > li.de-ds { background-image: url('images/de-ds-s.png') }
-ul#eventList > li.de-aw { background-image: url('images/de-aw-s.png') }
-ul#eventList > li.de-cs { background-image: url('images/de-cs-s.png') }
-ul#eventList > li.de-du { background-image: url('images/de-du-s.png') }
-ul#eventList > li.de-lu { background-image: url('images/de-lu-s.png') }
-ul#eventList > li.de-ab { background-image: url('images/de-ab-s.png') }
-ul#eventList > li.de-nr { background-image: url('images/de-nr-s.png') }
-
-ul#eventList > li.td-c   { background-image: url('images/td-c-s.png') }
-ul#eventList > li.td-cc  { background-image: url('images/td-cc-s.png') }
-ul#eventList > li.td-rup { background-image: url('images/td-rup-s.png') }
-ul#eventList > li.td-ps  { background-image: url('images/td-ps-s.png') }
-ul#eventList > li.td-ac  { background-image: url('images/td-ac-s.png') }
-ul#eventList > li.td-uc  { background-image: url('images/td-uc-s.png') }
-ul#eventList > li.td-li  { background-image: url('images/td-li-s.png') }
-ul#eventList > li.td-sa  { background-image: url('images/td-sa-s.png') }
-ul#eventList > li.td-iu  { background-image: url('images/td-iu-s.png') }
-*/
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* ======== Media Queries ====== */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-    
-    .banner1{
-        height: 180px;
-        color: silver;
-    }
-    
-    .b_events {
-        text-align: left;
-        height: 45%;
-        width: 100%;
-        float: none;
-        margin; 10%;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%,  rgba(255, 255, 255, 0)),
-                      url('../images/cosmicCat.png');
-        background-repeat: no-repeat,
-                           no-repeat;
-        background-size: contain;
-        padding: 5% 5%;
-    }
-    
-    .b_events h2 {
-        font-size: 1.625em;
-        padding-bottom: .125em;
-    }
-    
-    .a_events {
-        text-align: right;
-        height: 45%;
-        width: 100%;
-        float: none;
-        margin; 10%;
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 1) 50%,  rgba(255, 255, 255, 0)),
-                      url('../images/de-ab-s.png');
-    background-repeat: no-repeat,
-                       no-repeat;
-        padding: 5% 5%;
-    }
-    
-    .a_events h2{
-        font-size: 1.625em;
-        padding-bottom: .125em;
-    }
-}
-
-    .adquire h2 {
-        font-size: 2em;
-        padding: .35em .45em .45em;
-}
-
-
-    .appLogo {
-        width: 40%;
-        margin: auto;
-        padding: 0;
-      
-}
-
-    .appLogo ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-}
-
-    .appLogo li {
-        display: inline;
+img.capt {
+    height: 500px;
+    position: relative;
+    left: 93px;
+    top: 20px;
 }

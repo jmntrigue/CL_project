@@ -35,6 +35,7 @@ h2 {
 }
 
 p {
+    font-family: 'Roboto', sans-serif; 
 	font-size: 0.875em; /* 16x0.875=14px */
 	margin: 1.286em 0; /* 14x1.286=18px */
 }
@@ -153,4 +154,43 @@ img.capt {
     position: relative;
     left: 93px;
     top: 20px;
+}
+
+.join {
+    background-color: #efefef;
+    margin: auto;
+    padding:  .75em .925em 1.25em .925em;
+    z-index: 1;
+}
+
+.section {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 720px;
+    left: 15px;
+    font-kerning: -.93em;
+}
+
+span.wanted {
+    font-size: 5.5em;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+p.thick {
+    font-size: 4em;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    top; 20px;
+    overflow: visible;
+}
+
+.clearfix {
+    clear: both;
 }
